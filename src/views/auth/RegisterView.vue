@@ -26,14 +26,17 @@ function onClick() {
         <v-container>
           <v-row>
             <v-col cols="12" md="6" class="mx-auto text-center">
-              <v-card class="mx-auto" subtitle="Support your Local Farmers">
+              <v-card class="mx-auto"  subtitle="Support your Local Farmers">
                 <template v-slot:title>
                   <span class="font-weight-black">AgriVista</span>
-                  <link rel="icon" href="/AgriVistaLogo.png">
                 </template>
 
                 <v-card-text class="bg-surface-light pt-4">
                   <v-form fast-fail @submit.prevent>
+
+                    <v-text-field
+                      label="Full name" variant="outlined"
+                    ></v-text-field>
 
                     <v-text-field
                       label="Email" variant="outlined"
@@ -46,11 +49,13 @@ function onClick() {
                     <v-btn class="mt-2" type="submit" block>Log in</v-btn>
                   </v-form>
 
-                  <v-divider class="my-5 "></v-divider>
+               
 
-                  <h5 class="text-center"> Don't have an account? 
-                    <RouterLink to="/register">Register</RouterLink> </h5>
+                  <v-divider class="my-5"></v-divider>
 
+                  <h5 class="text-center">
+                    Already have an account? <RouterLink to="/login">Log in</RouterLink>
+                  </h5>
                 </v-card-text>
               </v-card>
             </v-col>
