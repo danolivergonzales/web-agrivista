@@ -15,8 +15,8 @@ function onClick() {
         <v-spacer></v-spacer>
 
         <v-btn
-          :prepend-icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
-          text="Light / Dark"
+          :icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
+         
           slim
           @click="onClick"
         ></v-btn>
@@ -28,7 +28,8 @@ function onClick() {
             <v-col cols="12" md="6" class="mx-auto text-center">
               <v-card class="mx-auto"  subtitle="Support your Local Farmers">
                 <template v-slot:title>
-                  <span class="font-weight-black">AgriVista</span>
+                  <v-img class="mx-auto" src="/images/AgriVistaLogo.png" width="200" height="150"></v-img>
+                  <span class="font-weight-black">Continue with</span>
                 </template>
 
                 <v-card-text class="bg-surface-light pt-4">
@@ -46,7 +47,7 @@ function onClick() {
                       label="Password" type="password" variant="outlined"
                     ></v-text-field>
 
-                    <v-btn class="mt-2" type="submit" block>Log in</v-btn>
+                    <v-btn class="mt-2" type="submit" block color="success">Start</v-btn>
                   </v-form>
 
                
