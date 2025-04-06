@@ -35,7 +35,7 @@
               </v-col>
 
               <v-col cols="12" md="7" class="d-none d-md-block">
-                <v-img src="/src/assets/bgg.jpg" class="h-100" cover style="border-radius: 20px;"></v-img>
+                <v-img src="/src/assets/bg2.jpg" class="h-100" cover style="border-radius: 20px;"></v-img>
               </v-col>
             </v-row>
           </v-card>
@@ -47,7 +47,7 @@
 
 <style scoped>
 .bg-container {
-  background: url('/src/assets/bgg.jpg') no-repeat center center;
+  background: url('/src/assets/bg2.jpg') no-repeat center center;
   background-size: cover;
   min-height: 100vh;
 }
