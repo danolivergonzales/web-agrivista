@@ -37,7 +37,7 @@ import { ref } from 'vue';
 
 <style scoped>
 .bg-container {
-  background: url('@/assets/bgg.jpg') no-repeat center center;
+  background: url('@/assets/bg2.jpg') no-repeat center center;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -69,4 +69,5 @@ import { ref } from 'vue';
   color: #2d7d46;
   text-decoration: none;
 }
+
 </style>
